@@ -32,5 +32,6 @@ play_count - Number of times the song was played <br>
 - matplotlib
 - seaborn
 - sklearn
+- nltk
 - scipy
 - surprise
