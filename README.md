@@ -17,3 +17,30 @@ user _id - A unique id given to the user <br>
 play_count - Number of times the song was played <br>
 
 **Data Source:** [Million Song Dataset](http://millionsongdataset.com/)
+
+**Libraries Used:**
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- sklearn
+- scipy
+- surprise
+
+### Popularity-based recommendation systems
+Popularity-based recommendation systems are the most basic recommendation systems. These systems are non-personalized and are based on the frequency of the items. The items that are more popular are recommended more often.
+
+### User similarity-based collaborative filtering
+User similarity-based collaborative filtering is a method used to make automatic predictions about the interests of a user by collecting preferences from many users. The underlying assumption is that if a user A has the same opinion as a user B on an issue, A is more likely to have B's opinion on a different issue than that of a randomly chosen user.
+
+### Item item similarity-based collaborative filtering recommendation systems
+Item-item collaborative filtering is a type of collaborative filtering for recommender systems based on the similarity between items calculated using people's ratings of those items.
+
+### Model based collaborative filtering - matrix factorization
+Model-based Collaborative Filtering is a **personalized recommendation system**, the recommendations are based on the past behavior of the user and it is not dependent on any additional information. We use **latent features** to find recommendations for each user.
+
+### Cluster based recommendation system
+Cluster-based recommendation is based on the idea of grouping similar items or users together. The idea is to recommend items to a user that are liked by other users in the same cluster as the user.
+
+### Content based recommendation
+Content-based filtering methods are based on a description of the item and a profile of the user’s preferences. These methods recommend items that are similar to those that a user liked in the past. The similarity of items is determined by the similarity in their properties.
