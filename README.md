@@ -1,11 +1,18 @@
-# recommendation-system
-In an era where information overload is commonplace, recommendation systems serve as a crucial interface to curate personalized user experiences, thus helping platforms retain and grow their user base amidst competition. The primary goal of this project is to learn and develop six distinct types of recommendation systems. By employing different methodologies, this project aims to clarify each approach in providing accurate and meaningful recommendations.
+# Music recommendation-system
+The project meticulously explores the domain of music recommendation systems, leveraging a comprehensive approach to understanding and implementing a diverse set of recommendation strategies. The project utilize the application of Singular Value Decomposition (SVD) and the construction of a cosine similarity matrix, two sophisticated techniques pivotal in enhancing the accuracy and relevance of recommendations. These methodologies are employed across six distinct predictive models:
+**Popularity-Based Recommendation:** This model leverages the overall popularity of items (songs, in this case) to recommend the most liked or most listened to tracks to users. It's a straightforward approach that assumes what's popular among the masses will likely appeal to individual users as well.
+**User Similarity-Based Recommendation:** By analyzing user profiles and their historical interactions with the music catalog, this model identifies users with similar tastes and preferences. Recommendations are then made based on the listening habits of these 'neighbor' users.
+**Item Similarity-Based Recommendation:** Similar to the user-based approach, but focusing on the similarities between items. Songs that are similar to those a user has enjoyed in the past are recommended, leveraging item features or interaction patterns to define similarity.
+**Model-Based Collaborative Filtering:** Utilizing SVD, this approach models user-item interactions to predict user preferences for items they haven't interacted with. It's a powerful method that can uncover latent factors underlying user preferences and item characteristics.
+**Cluster-Based Recommendation System:** This method groups users into clusters based on their preferences and behavior. Recommendations are made within these clusters, assuming that users within the same cluster will likely appreciate similar content.
+**Content-Based Recommendation:** Focusing on the attributes of the items themselves, this approach recommends items similar to those a user has liked before, based on content features such as genre, artist, and lyrics.
 
-### **Importing Libraries and the Dataset**
-**Data Dictionary**
+To evaluate the efficacy of these diverse recommendation strategies, the project employs robust metrics including **F1-score**, **Precision**, and **Recall** .
 
-The core data is the Taste Profile Subset released by the Echo Nest as part of the Million Song Dataset. There are two files in this dataset. The first file contains the details about the song id, titles, release, artist name, and the year of release. The second file contains the user id, song id, and the play count of users.
 
+### **Data Dictionary**
+
+The core data is the Taste Profile Subset released by the Echo Nest as part of the Million Song Dataset. 
 song_data <br>
 song_id - A unique id given to every song <br>
 title - Title of the song <br>
@@ -26,21 +33,3 @@ play_count - Number of times the song was played <br>
 - sklearn
 - scipy
 - surprise
-
-### Popularity-based recommendation systems
-Popularity-based recommendation systems are the most basic recommendation systems. These systems are non-personalized and are based on the frequency of the items. The items that are more popular are recommended more often.
-
-### User similarity-based collaborative filtering
-User similarity-based collaborative filtering is a method used to make automatic predictions about the interests of a user by collecting preferences from many users. The underlying assumption is that if a user A has the same opinion as a user B on an issue, A is more likely to have B's opinion on a different issue than that of a randomly chosen user.
-
-### Item item similarity-based collaborative filtering recommendation systems
-Item-item collaborative filtering is a type of collaborative filtering for recommender systems based on the similarity between items calculated using people's ratings of those items.
-
-### Model based collaborative filtering - matrix factorization
-Model-based Collaborative Filtering is a **personalized recommendation system**, the recommendations are based on the past behavior of the user and it is not dependent on any additional information. We use **latent features** to find recommendations for each user.
-
-### Cluster based recommendation system
-Cluster-based recommendation is based on the idea of grouping similar items or users together. The idea is to recommend items to a user that are liked by other users in the same cluster as the user.
-
-### Content based recommendation
-Content-based filtering methods are based on a description of the item and a profile of the user’s preferences. These methods recommend items that are similar to those that a user liked in the past. The similarity of items is determined by the similarity in their properties.
