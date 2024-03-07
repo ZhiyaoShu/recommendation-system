@@ -1,5 +1,5 @@
 # Recommendation-system
-## 1. Music Recommendation System
+### 1. Music Recommendation System
 The project meticulously explores the domain of music recommendation systems, leveraging a comprehensive approach to understanding and implementing a diverse set of recommendation strategies. The project utilize the application of Singular Value Decomposition (SVD) and the construction of a cosine similarity matrix, two sophisticated techniques pivotal in enhancing the accuracy and relevance of recommendations. These methodologies are employed across six distinct predictive models:<br>
 **Popularity-Based Recommendation:** This model leverages the overall popularity of items (songs, in this case) to recommend the most liked or most listened to tracks to users. It's a straightforward approach that assumes what's popular among the masses will likely appeal to individual users as well.<br>
 **User Similarity-Based Recommendation:** By analyzing user profiles and their historical interactions with the music catalog, this model identifies users with similar tastes and preferences. Recommendations are then made based on the listening habits of these 'neighbor' users.<br>
